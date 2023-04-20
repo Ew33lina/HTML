@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fake_nike_shop</title>
+    <link rel="stylesheet" href="wyglad.css">
+</head>
+<body> 
+    <div id="wrapper1">
+        <header>
+            <img src="https://kwplot.files.wordpress.com/2020/09/278c6-nike-reklama-wpadka.jpg?w=1200" alt="shoes_home"/>
+        </header>
+
+        <nav>
+            <a class="menu active" href="home.html">Strona główna</a><a class="menu active" href="womensshoes.html">Buty dla kobiet</a><a class="menu active" href="menshoes.html">Buty męskie</a><a class="menu active" href="kidsshoes.html">Buty dziecięce</a><a class="menu active" href="shoppingbasket.html">Koszyk</a><a class="menu active" href="login.html">Zaloguj się</a><a class="menu active"></a>
+        </nav>
+
+        <h1>Logowanie użytkownika</h1>
+            <form action="login.php" method="post">
+                <label for="username">Nazwa użytkownika:</label>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="password">Hasło:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="button" value="Zaloguj się" onclick="checkLogin()">
+                <input type="button" value="Zarejestruj się" onclick="location.href='rejestracja.html';">
+            </form>
+
+        <script>
+            function checkLogin() {
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+                
+                if (username == "admin" && password == "admin") {
+                    window.location.href = "admin.html"; 
+                } else {
+                    alert("Nieprawidłowy login lub hasło. Spróbuj ponownie.");
+                }
+            }
+        </script>
+
+    </div>
+</body>
+</html>

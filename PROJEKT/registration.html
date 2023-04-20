@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fake_nike_shop</title>
+    <link rel="stylesheet" href="wyglad_rejestracja.css">
+</head>
+<body> 
+    <div id="wrapper1">
+        <header>
+            <img src="https://kwplot.files.wordpress.com/2020/09/278c6-nike-reklama-wpadka.jpg?w=1200" alt="shoes_home"/>
+        </header>
+
+        <nav>
+            <a class="menu active" href="home.html">Strona główna</a><a class="menu active" href="womensshoes.html">Buty dla kobiet</a><a class="menu active" href="menshoes.html">Buty męskie</a><a class="menu active" href="kidsshoes.html">Buty dziecięce</a><a class="menu active" href="shoppingbasket.html">Koszyk</a><a class="menu active" href="login.html">Zaloguj się</a><a class="menu active"></a>
+        </nav>
+
+        <h1>Rejestracja użytkownika</h1>
+        <form action="register.php" method="post">
+            <label for="username">Nazwa użytkownika:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="email">Adres e-mail:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="password">Hasło:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <label for="confirm_password">Potwierdź hasło:</label>
+            <input type="password" id="confirm_password" name="confirm_password"><br><br>
+            <input type="submit" value="Zarejestruj się">
+        </form>
+
+    </div>
+</body>
+</html>
